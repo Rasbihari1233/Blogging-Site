@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} {% endblock %}  Machine learning </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ML.css')}}">
+    <!-- favicon  -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Output.png' ) }}">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+    <a href="#" class="textstyle"> <h3 class="pointer">programming's hub</h3> </a>
+        <ul id="nav navGo" onload="remove_nav()" class="nav">
+            <li class="right bodonhover">
+                <a href="/" class="textstyle">Home</a>
+            </li>
+            <li id="about" class="pointer">
+                <a href="/about" class="textstyle">About</a>
+            </li>
+            <li class="right bodonhover">
+                <a href="/contact" class="textstyle">Contact Us</a>
+            </li>
+            <button onclick="changeToCross()" id="submit" class="pointer">Menu </button>
+        </ul>
+    </div>
+
+  <div class="container">
+    <div class="leftcolumn">
+      <div class="card" id="card">
+
+        <!-- Todo: Fetch it using for loop from the database -->
+
+        <h1 class="py">Best Machine Learning Roadmap | Definitive guide to ML for 2022</h1>
+        <p class="py">October 18, 2022</p>
+        <p>
+          This post will tell you the exact Machine Learning Roadmap to start your ML journey. Whether you are a
+          beginner or just started, you will get basics to advance level resources for machine learning. Even I have
+          followed these resources to gain much knowledge of ML.
+        </p>
+        <div class="image px">
+          <img src="https://myriadbrain.com/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-26-at-4.27.40-PM-min.jpeg"
+          class="image" alt="coding image">
+        </div>
+        <p class="px">Machine Learning, Artificial Intelligence, Deep Learning, the Internet of Things, etc., are now
+          changing the world. It will not be wrong to say these branches will be at their peak.
+        </p>
+        <p class="px">
+          Because the amount of data we generate and store every day is growing at an exponential rate. Machine
+          Learning, Artificial Intelligence, and Deep Learning help organizations extract value from the troves of data
+          they collect, delivering business insights, automating tasks, and advancing system capabilities.
+        </p>
+        <p class="px">
+          Before I jump into the roadmap for ML, let me tell you why this roadmap will be a bit different than others.
+        </p>
+        <p class="px">
+          If you want to build your career in AI & ML, you might get lots of challenges and confusion in starting
+          because many of us don’t know the right resources and path to follow for machine learning. Some of us may end
+          up with highly advanced ML courses and stop the ML journey.
+        </p>
+        <p class="px">
+          But you will get all the resources that cover fundamental concepts to advance level concepts for ML in this
+          Machine Learning Roadmap.
+        </p>
+
+        <h1 class="">
+          Machine Learning Roadmap
+        </h1>
+        <p class="px">
+          Prerequisites for starting your machine learning journey:
+        </p>
+        <h1 class="">
+          1. Maths
+        </h1>
+        <p class="py">
+          "Mathematics is the heart of Machine Learning"
+        </p>
+        <p class="py">
+          In my opinion, having a fundamental knowledge of maths is a must for starting Machine learning because every
+          Machine Learning algorithm is built on mathematical concepts.
+        </p>
+        <p>
+          If you are a University student, you may already have a basic knowledge of mathematics essential for Machine
+          Learning. If you are not, don’t be sad. I will walk you through every mathematical resource you need to be
+          cleared before jumping into ML.
+        </p>
+        <p>Those mathematical topics are given below.
+          <li>Linear Algebra</li>
+          <li>Probability & Statics</li>
+          <li>Calculas</li>
+        </p>
+        <p class="py">
+          Let’s discuss how the above topics are used in Machine Learning and share some helpful resources.
+        </p>
+        <h1>
+          <li type="i">Linear Algebra</li>
+        </h1>
+        <p class="py">
+          Linear Algebra is the branch of Mathematics. We study vectors, matrics, Symmetric Matrices, Orthogonalization
+          & Orthonormalization, Matrix Operations, Projections, Eigenvalues & Eigenvectors, Vector Spaces, and Norms in
+          Linear Algebra.
+        </p>
+        <p class="py">
+          We use these concepts in many ML algorithms like Principal Component Analysis (PCA), Eigendecomposition of a
+          matrix, LU Decomposition, QR Decomposition/Factorization, and Singular Value Decomposition (SVD), etc.
+        </p>
+        <p class="py">
+          I have mentioned some great resources for learning Linear Algebra. If you are a beginner, you can go through
+          these resources and learn the fundamental of linear Algebra.
+        </p>
+        <p class="py">
+          I prefer you to go through this <a href="https://youtube.com/playlist?list=PL2QY0xcsWhz6ghPUixeNQm47xapSKw4SM"
+            alt="This is 3Blue 1Brown" target="_blank">playlist</a>. I didn’t make it…but I think this is best for basic
+          algebra. This is made by the 3Blue1Brown channel on youtube.
+        </p>
+        <p class="py">
+          Playlist: <a href="https://youtube.com/playlist?list=PL2QY0xcsWhz6ghPUixeNQm47xapSKw4SM"
+            alt="This is 3Blue 1Brown" target="_blank">Linear Algebra</a>
+        </p>
+        <h1>
+          ii. Probability & Statistics
+        </h1>
+        <p>Statistics and Machine learning do not have much difference. In the machine learning process, we need to deal
+          with data and its properties most of the time.</p>
+        <p class="py">
+          We analyze data, learn from data, and gather insights and visualizations that will help build best suit
+          algorithms for a given problem or application. This is what statistics is all about.
+        </p>
+        <p class="py">
+          Probability and statistics are used in ml theory like Combinatorics, Probability Rules & Axioms, Bayes’
+          Theorem, Random Variables, Variance and Expectation, Standard Distributions (Bernoulli, Binomial, Multinomial,
+          Uniform, and Gaussian), Conditional and Joint Distributions, Moment Generating Functions, Prior and Posterior,
+          Maximum Likelihood Estimation (MLE), Maximum a Posteriori Estimation (MAP) and Sampling Methods.
+        </p>
+        <p class="py">
+          I mentioned some excellent resources for Probability & Statistics.
+        </p>
+        <p class="py">
+          I shared the NPTEL course on <a
+            href="https://youtube.com/playlist?list=PLyqSpQzTE6M_JcleDbrVyPnE0PixKs2JE">Probality and Statistics</a>...
+          it's amazing.
+        </p>
+        <p class="py">
+          NPTEL Course: <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M_JcleDbrVyPnE0PixKs2JE">Probality and
+            Statistics</a>
+        </p>
+        <h1>
+          iii. Calculus
+        </h1>
+        <p class="py">
+          Calculus helps to understand the behavior and internal working different algorithms and function. It would be
+          best to learn calculus to know how the function behaves and its changes over time.
+        </p>
+        <p class="py">
+          The topis we need to learn in calculus are Differential and Integral Calculus, Partial Derivatives,
+          Vector-Values Functions, Directional Gradients, Hessian, Jacobian, Laplacian, and Lagrangian Distribution.
+        </p>
+        <p class="py">
+          One of the best calculus applications is the Gradient descent algorithm, which is used in backpropagation in
+          neural networks to find the minima of a function.
+        </p>
+        <p class="py">
+          I’m attaching the resources for calculus. It’s a playlist on youtube made by 3Blue1Brown. If you are not from
+          a mathematical background then I suggest you learn the basics of calculus from this playlist.
+        </p>
+        <p class="py">
+          Playlist:<a href="https://youtube.com/playlist?list=PL0-GT3co4r2wlh6UHTUeQsrf3mlS2lk6x">Calculus</a>
+        </p>
+        <h1>
+          2. Python
+        </h1>
+        <p class="py">
+          To implement ML algorithms, modify them, and perform different tasks, you must choose a programming language.
+          I prefer Python programming languages for ML.
+        </p>
+        <p class="py">
+          Because Python is popular, easy to learn the language for all.
+        </p>
+        <p>
+          In machine learning, you have to train your models with different kinds of data and deal with it. People used
+          to do all the tasks manually, like coding algorithms, mathematical formulas, and building models. Compared to
+          the past, It is easy to train and make models now because of various python libraries and modules.
+        </p>
+        <p>
+          Here are some essential libraries of Python:
+          <li>Numpy</li>
+          <li>Pandas</li>
+          <li>Matplotlib</li>
+          <li>Seaborn</li>
+          <li>TensorFlow</li>
+          <li>Keras</li>
+          <li>Scikit-learn</li>
+          <li>PyTorch</li>
+          <li class="py">CV2</li>
+        </p>
+        <p class="py">
+          If you want to learn python from the beginning, I suggest you learn it from Freecodecamp. He made an amazing
+          playlist from beginner to advanced level. I’m not promoting any channels, but I only suggest you the best
+          ones.
+        </p>
+        <div class="image">
+          <iframe width="100%" height="559" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="py">
+          Python
+        </p>
+        <p class="py">
+          It would be best To learn basic concepts of python language and some needed libraries like NumPy, pandas,
+          matplotlib, and seaborn first.
+        </p>
+        <p class="py">
+          Let us briefly look at each library:
+          <li><b>Numpy:</b>
+            In machine learning, you have to play with matrices and vectors so that NumPy will be beneficial. We can use
+            many functions to perform mathematical and scientific calculations using NumPy.
+          </li>
+          <li><b>Pandas:</b>
+            To deal with the dataset, pandas will be very helpful. For example, load the data, rearrange data, analyze
+            data, understand the data, etc.
+          </li>
+          <li><b>Matplotlib:</b>
+            matplotlib helps visualize the data and results by making graphs and helps to understand data.
+          </li>
+          <li class="py"><b>Seaborn:</b>
+            seaborn is a very similar library to the matplotlib. You can say that seaborn is updated matplotlib. Seaborn
+            is also a handy library.
+          </li>
+        </p>
+        <p class="py">
+          If you don’t know all these libraries, then I suggest you this Freecodecamp video on youtube.
+        </p>
+        <div class="image">
+          <iframe width="100%" height="515" src="https://www.youtube.com/embed/r-uOLxNrNk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p> numpy, pandas, matplotlib, seaborn</p>
+        <h1 class="">
+          Machine Learning
+        </h1>
+        <p>
+          Till now, you have seen all those resources for the prerequisites of machine learning. It is time to jump into
+          the understanding of core machine learning algorithms.
+        </p>
+        <p>
+          As you know, machine learning is the study of making machines behave like a human and make decisions and
+          predictions for different applications. Having the fundamental knowledge of machine learning algorithms is
+          good for you.
+        </p>
+        <p class="py">
+          Let me introduce you to a primary pipeline for ML. There are mainly seven steps for performing Machine
+          Learning tasks.
+          <li>Gathering Data</li>
+          <li>Preparing that data</li>
+          <li>Choosing a model</li>
+          <li>Training</li>
+          <li>Evaluation</li>
+          <li>Hyperparameter Tuning</li>
+          <li class="py">Prediction</li>
+        </p>
+        <p class="py">
+          Along with these seven steps, you need to master of following concepts and algorithms.
+          <li>Clean Data</li>
+          <li>Fill Missig Value</li>
+          <li>Drop Some Feature</li>
+          <li>Feature Selection</li>
+          <li>Feature Scaling</li>
+          <li>Regularization</li>
+          <li>Feature Engineering (optional at first)</li>
+          <li> Regression Algorithms </li>
+          <li> Simple Linear Regression </li>
+          <li> Ridge & Lasso </li>
+          <li> Multiple Linear Regression </li>
+          <li> Polynomial Regression </li>
+          <li> XGBRegressor </li>
+          <li> Classification Algorithms </li>
+          <li> KNN (K Nearest Neighbor) </li>
+          <li> Logistic Regression </li>
+          <li> Decision Tree </li>
+          <li> Random Forest </li>
+          <li> Naive Bayes </li>
+          <li> XGBClassifier </li>
+          <li> Clustering Algorithms </li>
+          <li> K-Means </li>
+          <li> DBSCAN (Density-based spatial clustering of applications) </li>
+          <li> Dimensionality Reduction </li>
+          <li> PCA (Principale Component Analysis) </li>
+          <li> LDA </li>
+          <li class="py"> t-SNE </li>
+        </p>
+        <p class="py">
+          I suggest the full course of Machine Learning by Prof. <u>Andrew Ng</u> on Coursera.
+        </p>
+        <p class="py">
+          Machine Learning Course: <a href="">Machine Learing</a>
+        </p>
+
+      </div> <!-- end of card class of leftcolumn -->
+    </div> <!-- end of leftcolumn -->
+
+    <div class="rightcolumn">
+      <div class="card disp-none">
+        <div class="searchbar">
+          <div class="searchbox">
+            <input type="text" name="search" id="search" placeholder="Search" onkeyup="search()">
+          </div>
+          <div class="btn mx s_btn pointer">
+            <p>Search</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card px">
+        <h1 class="py">Popular post</h1>
+        <p class="">
+          <p class="py-1"><a href="/mltutorial" style="color: blue;" class="pointer">
+            Best Machine Learning Roadmap Definitive guide to ML for 2022
+          </a> </p>
+          <p class="py-1"> <a href="/numpy" style="color: blue;" class="pointer">
+            Numpy Introduction
+          </a>
+          </p>
+          <p class="py-1"> <a href="/pandas" style="color: blue;" class="pointer">
+            Pandas Introduction
+          </a>
+          </p>
+      </div>
+    </div> <!-- end of right column -->
+  </div> <!-- end of container class -->
+
+  <div class="footer">
+    <div class="fcontainer">
+      Contact us on
+        <a href="https://www.github.com/" target="_blank"> <div class="fa fa-github p-l pointer"></div></a>
+        <a href="https://www.linkedin.com/" target="_blank"> <div class="fa fa-linkedin pointer p-l"></div></a>
+        <a href="https://www.facebook.com/" target="_blank"> <div class="fa fa-facebook pointer p-l"></div></a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
